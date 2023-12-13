@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Text Path</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .circle-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: lightblue;
+      }
+
+      .rotated-content {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        white-space: nowrap;
+        font-size: 18px;
+        text-align: center;
+        animation: rotateText 5s linear infinite;
+        border-radius: 50%;
+        border: 3px solid red;
+      }
+
+      @keyframes rotateText {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="rotated-content">Successful 10 Years</div>
+    </div>
+  </body>
+</html> -->
+
+<!-- <div>
+  <fieldset>
+    <label>Text:</label>
+    <input type="text" class="text" value="CIRCLE TEXT" />
+    <label>Radius:</label>
+    <input class="radius" type="range" min="100" max="1000" value="500" />
+  </fieldset>
+</div>
+<div class="curved-text">CIRCLE TEXT</div>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Text Path</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .circle-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: lightblue;
+      }
+
+      .rotated-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-size: 18px;
+        text-align: center;
+        animation: rotateText 5s linear infinite;
+        border-radius: 50%;
+        border: 3px solid red;
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+      }
+
+      @keyframes rotateText {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="rotated-content">Successful 10 Years</div>
+    </div>
+  </body>
+</html>
